@@ -14,9 +14,9 @@ export function getRandomColor() {
   return color;
 }
 
-export function distance(x1, y1, x2, y2) {
-  const xDist = x2 - x1;
-  const yDist = y2 - y1;
+export function getDistance(object1, object2) {
+  const xDist = object2.x - object1.x;
+  const yDist = object2.y - object1.y;
 
   return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
 }
