@@ -20,3 +20,10 @@ export function getDistance(object1, object2) {
 
   return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
 }
+
+export function getObjectDistance(object1, object2) {
+  const xDist = object2.x - object1.x;
+  const yDist = object2.y - object1.y;
+
+  return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
+}
